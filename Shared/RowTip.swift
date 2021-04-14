@@ -12,13 +12,13 @@ struct RowTip: View {
     var tip: Tip
     
     var body: some View {
-        VStack{
+        VStack(alignment:.leading){
             HStack{
                 Text(tip.title).foregroundColor(Color.MColorGrayTitle)
                 Spacer()
-            }
+            }.padding(.vertical)
             Text(tip.description).foregroundColor(Color.MColorGraySubTitle)
-        }.padding()
+        }
     }
 }
 

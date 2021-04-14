@@ -9,28 +9,24 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        VStack{
-            HStack{
-                Text("Hola Jaime").font(.title)
-                Spacer()
-                Image(systemName: "person")
+        NavigationView{
+        ScrollView {
+            VStack{
+                //ComponentHeader(title: "Hola, Jaime").padding()
+                ComponentGraph()
+                HStack{
+                    Text("Ultimos registros")
+                    Spacer()
+                    Text("more")
+                }.padding()
+                ListRecord(show: .PREVIEW).frame(height:250)
             }
-            Spacer()
-            HStack{
-                Text("Ultimos registros")
-                Spacer()
-                Text("more")
-            }
-            RowRecord(record: BloodPressure(id: 0, sys: 129, dia: 80, pul: 23, create: "")).padding()
-                .background(Color.MColorYellowScan)
-                .cornerRadius(25)
-            RowRecord(record: BloodPressure(id: 0, sys: 129, dia: 80, pul: 23, create: "")).padding()
-                .background(Color.MColorGreenScan)
-                .cornerRadius(25)
-            RowRecord(record: BloodPressure(id: 0, sys: 129, dia: 80, pul: 23, create: "")).padding()
-                .background(Color.MColorGreenScan)
-                .cornerRadius(25)
-        }.padding()
+            }.navigationTitle("Hola, Jaime").navigationBarTitleDisplayMode(.large).navigationBarItems(
+                trailing:
+                    NavigationLink(
+                        destination: ViewProfile()){ ProfileButton()}
+            )
+        }
     }
 }
 

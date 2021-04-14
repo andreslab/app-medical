@@ -9,14 +9,15 @@ import SwiftUI
 
 struct ViewTips: View {
     var body: some View {
+        NavigationView{
         VStack {
-            HStack{
-                Text("Tips de salud").font(.title)
-                Spacer()
-                Image(systemName: "person")
-            }
+            //ComponentHeader(title: "Tips de salud").padding()
             ListTips()
-        }.padding()
+        }.navigationTitle("Tips de salud").navigationViewStyle(StackNavigationViewStyle()).navigationBarTitleDisplayMode(.large).navigationBarItems(
+            trailing:
+                NavigationLink(
+                    destination: ViewProfile()){ ProfileButton()})
+    }
     }
 }
 

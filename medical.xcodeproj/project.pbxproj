@@ -40,6 +40,8 @@
 		417D10382615CF25003FBA45 /* RowRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D10362615CF25003FBA45 /* RowRecord.swift */; };
 		417D103E2615D293003FBA45 /* ListRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D103D2615D293003FBA45 /* ListRecord.swift */; };
 		417D103F2615D293003FBA45 /* ListRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D103D2615D293003FBA45 /* ListRecord.swift */; };
+		418228B5262763BB009BEDBF /* ComponentGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418228B4262763BB009BEDBF /* ComponentGraph.swift */; };
+		418228B6262763BB009BEDBF /* ComponentGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418228B4262763BB009BEDBF /* ComponentGraph.swift */; };
 		4189A3E3261B999500729AF4 /* RowTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189A3E2261B999500729AF4 /* RowTip.swift */; };
 		4189A3E4261B999500729AF4 /* RowTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189A3E2261B999500729AF4 /* RowTip.swift */; };
 		4189A3EA261B999F00729AF4 /* ListTips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189A3E9261B999F00729AF4 /* ListTips.swift */; };
@@ -103,6 +105,7 @@
 		417D102F2615CE67003FBA45 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		417D10362615CF25003FBA45 /* RowRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowRecord.swift; sourceTree = "<group>"; };
 		417D103D2615D293003FBA45 /* ListRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRecord.swift; sourceTree = "<group>"; };
+		418228B4262763BB009BEDBF /* ComponentGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentGraph.swift; sourceTree = "<group>"; };
 		4189A3E2261B999500729AF4 /* RowTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowTip.swift; sourceTree = "<group>"; };
 		4189A3E9261B999F00729AF4 /* ListTips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTips.swift; sourceTree = "<group>"; };
 		4189A3F0261B99BC00729AF4 /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
@@ -192,6 +195,7 @@
 				417D10202615CA8E003FBA45 /* ComponentCategoryRecord.swift */,
 				417D10272615CB36003FBA45 /* ComponentInputBloodPressure.swift */,
 				4189D43A2624C28B0033B5EA /* ComponentHeader.swift */,
+				418228B4262763BB009BEDBF /* ComponentGraph.swift */,
 				417D10362615CF25003FBA45 /* RowRecord.swift */,
 				4189A3E2261B999500729AF4 /* RowTip.swift */,
 				4189D4242624BAC90033B5EA /* RowAlarm.swift */,
@@ -419,6 +423,7 @@
 				4189D4302624C0280033B5EA /* ViewDetailAlarm.swift in Sources */,
 				417D10212615CA8E003FBA45 /* ComponentCategoryRecord.swift in Sources */,
 				417D10372615CF25003FBA45 /* RowRecord.swift in Sources */,
+				418228B5262763BB009BEDBF /* ComponentGraph.swift in Sources */,
 				417D10052615C97C003FBA45 /* ViewAlarms.swift in Sources */,
 				417D10302615CE67003FBA45 /* Record.swift in Sources */,
 				417D10282615CB36003FBA45 /* ComponentInputBloodPressure.swift in Sources */,
@@ -459,6 +464,7 @@
 				417D0FDA2615BC9B003FBA45 /* ViewContent.swift in Sources */,
 				4189A3E4261B999500729AF4 /* RowTip.swift in Sources */,
 				4189D41B2624B9DB0033B5EA /* Alarm.swift in Sources */,
+				418228B6262763BB009BEDBF /* ComponentGraph.swift in Sources */,
 				4189D43C2624C28B0033B5EA /* ComponentHeader.swift in Sources */,
 				417D0FF82615C945003FBA45 /* ViewRecord.swift in Sources */,
 				4189D4262624BAC90033B5EA /* RowAlarm.swift in Sources */,

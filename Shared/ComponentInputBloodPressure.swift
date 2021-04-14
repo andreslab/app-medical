@@ -9,28 +9,31 @@ import SwiftUI
 
 struct ComponentInputBloodPressure: View {
     var body: some View {
-        VStack (alignment: .center, spacing: 10){
+        VStack (alignment: .leading, spacing: 10){
             HStack {
-                Text("Registro")
+                Text("SYS")
                     .font(.largeTitle)
                     .padding()
-                Text("Registro")
+                Spacer()
+                Text("0")
                     .font(.largeTitle)
                     .padding()
             }
             HStack {
-                Text("Registro")
+                Text("DIA")
                     .font(.largeTitle)
                     .padding()
-                Text("Registro")
+                Spacer()
+                Text("0")
                     .font(.largeTitle)
                     .padding()
             }
             HStack {
-                Text("Registro")
+                Text("PUL")
                     .font(.largeTitle)
                     .padding()
-                Text("Registro")
+                Spacer()
+                Text("0")
                     .font(.largeTitle)
                     .padding()
             }

@@ -20,7 +20,7 @@ struct RowAlarm: View {
                 Text(alarm.title)
                 Spacer()
             }
-        }.padding()
+        }
     }
 }
 

@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct ComponentHeader: View {
+    var title: String
     var body: some View {
         HStack{
-            Text("Alarmas").font(.title).foregroundColor(.MColorGrayTitle)
+            Text(title).font(.title).foregroundColor(.MColorGrayTitle)
             Spacer()
             NavigationLink(
                 destination: ViewProfile()){ ProfileButton()}
@@ -21,6 +22,6 @@ struct ComponentHeader: View {
 
 struct ComponentHeader_Previews: PreviewProvider {
     static var previews: some View {
-        ComponentHeader()
+        ComponentHeader(title: "Hola, Jaime")
     }
 }

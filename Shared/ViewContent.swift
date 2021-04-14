@@ -43,11 +43,16 @@ struct ViewContent_Previews: PreviewProvider {
 
 struct ProfileButton: View{
     
-    var body: some View {
+    /*var body: some View {
         Image(systemName:"person")
         .foregroundColor(.white)
+            .frame(width:8, height:8)
         .padding()
         .background(Color.MColorPrimary)
-        .cornerRadius(20)
+        .cornerRadius(4)
+    }*/
+    var body: some View {
+        Image(systemName:"person")
+        .foregroundColor(Color.MColorPrimary)
     }
 }

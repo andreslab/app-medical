@@ -10,18 +10,26 @@ import SwiftUI
 struct ViewNewRecord: View {
     var body: some View {
         VStack (alignment: .center, spacing: 10){
+            
+            HStack{
+                Button("12-02-20 13:20") {
+                    print("")
+                }
+                Spacer()
+            }
             ComponentInputBloodPressure()
             ComponentCategoryRecord()
             Spacer()
-            HStack{
+            HStack(alignment: .center){
                 Button("Cancelar") {
                     print("")
                 }
+                Spacer()
                 SaveButton(title: "Guardar") {
                     print("")
                 }
             }
-        }
+        }.padding()
     }
 }
 
@@ -41,6 +49,8 @@ struct SaveButton: View{
             Text(title).font(.caption2)
         }
         .foregroundColor(.white)
+        .font(.title2)
+        .frame(width:120)
         .padding()
         .background(Color.MColorPrimary)
         .cornerRadius(20)

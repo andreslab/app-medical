@@ -10,26 +10,24 @@ import SwiftUI
 struct ViewRecord: View {
     var body: some View {
         NavigationView{
-        VStack {
-            HStack{
-                Text("Registro").font(.title)
-                Spacer()
-                Image(systemName: "person")
-            }
-            HStack{
-                ActionButton(title: "Enviar", action: {
-                    print("")
-                })
-                ActionButton(title: "Descargar", action: {
-                    print("")
-                })
-                MoreActionButton(action: {
-                    print("")
-                })
-            }
-            ListRecord()
-        }.padding()
-            
+            VStack {
+                //ComponentHeader(title: "Registro").padding()
+                HStack{
+                    ActionButton(title: "Enviar", action: {
+                        print("")
+                    })
+                    ActionButton(title: "Descargar", action: {
+                        print("")
+                    })
+                    MoreActionButton(action: {
+                        print("")
+                    })
+                }
+                ListRecord(show: .COMPLETE)
+            }.navigationTitle("Registros").navigationViewStyle(StackNavigationViewStyle()).navigationBarTitleDisplayMode(.large).navigationBarItems(
+                trailing:
+                    NavigationLink(
+                        destination: ViewProfile()){ ProfileButton()})
         }
     }
 }

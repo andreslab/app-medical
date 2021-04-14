@@ -11,7 +11,7 @@ struct ViewAlarms: View {
     var body: some View {
         NavigationView{
             VStack {
-                ComponentHeader()
+                
                 HStack{
                     ActionButton(title: "Nuevo", action: {
                         print("")
@@ -22,9 +22,13 @@ struct ViewAlarms: View {
                     MoreActionButton(action: {
                         print("")
                     })
-                }
-                ListAlarms()
-            }.padding()
+                }.padding()
+                ListAlarms().navigationTitle("Alarmas").navigationBarTitleDisplayMode(.large).navigationBarItems(
+                    trailing:
+                        NavigationLink(
+                            destination: ViewProfile()){ ProfileButton()}
+                )
+        }
         }
     }
 }

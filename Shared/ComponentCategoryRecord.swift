@@ -13,9 +13,11 @@ struct ComponentCategoryRecord: View {
             Button("BP") {
                 print("")
             }.buttonStyle(FilledButton())
+            Spacer()
             Button("O") {
                 print("")
             }.buttonStyle(FilledButton())
+            Spacer()
             Button("...") {
                 print("")
             }.buttonStyle(FilledButton())
@@ -34,6 +36,8 @@ struct FilledButton: ButtonStyle {
         configuration
             .label
             .padding()
+            .frame(width: 80, height:80, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            .font(.largeTitle)
             .foregroundColor(configuration
                                 .isPressed ? Color.white : Color.MColorGrayTitle)
             .background(configuration.isPressed ? Color.white : Color.MColorGrayBackground)
