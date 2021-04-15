@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct ViewNewRecord: View {
+    
+    let recordManager: RecordManager
+    @State private var sys: String = ""
+    @State private var dia: String = ""
+    @State private var pul: String = ""
+    
     var body: some View {
         VStack (alignment: .center, spacing: 10){
             
@@ -17,7 +23,8 @@ struct ViewNewRecord: View {
                 }
                 Spacer()
             }
-            ComponentInputBloodPressure()
+            ComponentInputBloodPressure(sys:
+                                            $sys, dia: $dia, pul: $pul)
             ComponentCategoryRecord()
             Spacer()
             HStack(alignment: .center){
@@ -26,7 +33,8 @@ struct ViewNewRecord: View {
                 }
                 Spacer()
                 SaveButton(title: "Guardar") {
-                    print("")
+                    print("sys \(sys) dia \(dia) pul \(pul)")
+                    recordManager.saveBloodPressure(sys: Int16(sys)!, dia: Int16(dia)!, pul: Int16(pul)!)
                 }
             }
         }.padding()
@@ -35,7 +43,7 @@ struct ViewNewRecord: View {
 
 struct ViewNewRecord_Previews: PreviewProvider {
     static var previews: some View {
-        ViewNewRecord()
+        ViewNewRecord(recordManager: RecordManager())
     }
 }
 

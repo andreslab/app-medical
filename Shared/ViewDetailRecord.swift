@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ViewDetailRecord: View {
-    var record: BloodPressure
+    var record: BloodPressureModel
     var body: some View {
         Text("sys \(record.sys)")
     }
@@ -16,6 +16,6 @@ struct ViewDetailRecord: View {
 
 struct ViewDetailRecord_Previews: PreviewProvider {
     static var previews: some View {
-        ViewDetailRecord(record:BloodPressure(id: 0, sys: 129, dia: 80, pul: 23, create: ""))
+        ViewDetailRecord(record:BloodPressureModel(id: 0, sys: 129, dia: 80, pul: 23, create: Date()))
     }
 }

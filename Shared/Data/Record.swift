@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct BloodPressure {
+struct BloodPressureModel {
     var id: Int
-    var sys: Int
-    var dia: Int
-    var pul: Int
-    var create: String
+    var sys: Int16
+    var dia: Int16
+    var pul: Int16
+    var create: Date
 }

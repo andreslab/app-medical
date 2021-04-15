@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RowRecord: View {
     
-    var record: BloodPressure
+    var record: BloodPressureModel
     
     var body: some View {
         HStack {
@@ -40,6 +40,6 @@ struct RowRecord: View {
 
 struct RowRecord_Previews: PreviewProvider {
     static var previews: some View {
-        RowRecord(record: BloodPressure(id: 0, sys: 120, dia: 80, pul: 70, create: "30-03_2021")).previewLayout(.fixed(width: 400, height: 80))
+        RowRecord(record: BloodPressureModel(id: 0, sys: 120, dia: 80, pul: 70, create: Date())).previewLayout(.fixed(width: 400, height: 80))
     }
 }

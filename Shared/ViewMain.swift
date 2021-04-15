@@ -7,7 +7,10 @@
 
 import SwiftUI
 
-struct MainView: View {
+struct ViewMain: View {
+    
+    let recordManager: RecordManager
+    
     var body: some View {
         NavigationView{
         ScrollView {
@@ -30,8 +33,8 @@ struct MainView: View {
     }
 }
 
-struct MainView_Previews: PreviewProvider {
+struct ViewMain_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        ViewMain(recordManager: RecordManager())
     }
 }

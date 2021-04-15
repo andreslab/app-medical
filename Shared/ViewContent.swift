@@ -10,7 +10,7 @@ import SwiftUI
 struct ViewContent: View {
     var body: some View {
         TabView{
-            MainView().tabItem {
+            ViewMain(recordManager: RecordManager()).tabItem {
                 Image(systemName: "heart.fill")
                             .imageScale(.medium)
             }
@@ -18,7 +18,7 @@ struct ViewContent: View {
                 Image(systemName: "heart.fill")
                             .imageScale(.medium)
             }
-            ViewNewRecord().tabItem {
+            ViewNewRecord(recordManager: RecordManager()).tabItem {
                 Image(systemName: "heart.fill")
                     .imageScale(.medium).foregroundColor(.MColorGreenAdd)
             }

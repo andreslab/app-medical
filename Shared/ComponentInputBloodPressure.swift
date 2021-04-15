@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct ComponentInputBloodPressure: View {
+    
+    @Binding var sys: String
+    @Binding var dia: String
+    @Binding var pul: String
+    
     var body: some View {
         VStack (alignment: .leading, spacing: 10){
             HStack {
@@ -15,27 +20,33 @@ struct ComponentInputBloodPressure: View {
                     .font(.largeTitle)
                     .padding()
                 Spacer()
-                Text("0")
+                TextField("0", text: $sys)
+                    .frame(width:100)
                     .font(.largeTitle)
                     .padding()
+                    .keyboardType(.numberPad)
             }
             HStack {
                 Text("DIA")
                     .font(.largeTitle)
                     .padding()
                 Spacer()
-                Text("0")
+                TextField("0", text: $dia)
+                    .frame(width:100)
                     .font(.largeTitle)
                     .padding()
+                    .keyboardType(.numberPad)
             }
             HStack {
                 Text("PUL")
                     .font(.largeTitle)
                     .padding()
                 Spacer()
-                Text("0")
+                TextField("0", text: $pul)
+                    .frame(width:100)
                     .font(.largeTitle)
                     .padding()
+                    .keyboardType(.numberPad)
             }
         }
         .background(Color.MColorGrayBackground)
@@ -43,8 +54,8 @@ struct ComponentInputBloodPressure: View {
     }
 }
 
-struct ComponentInputBloodPressure_Previews: PreviewProvider {
-    static var previews: some View {
-        ComponentInputBloodPressure()
-    }
-}
+//struct ComponentInputBloodPressure_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ComponentInputBloodPressure()
+//    }
+//}

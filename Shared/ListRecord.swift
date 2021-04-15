@@ -12,27 +12,41 @@ enum Show {
     case COMPLETE
 }
 
-private let records: ArraySlice = [
-    BloodPressure(id: 0, sys: 129, dia: 80, pul: 23, create: "12-02-20 20:30"),
-    BloodPressure(id: 1, sys: 130, dia: 80, pul: 23, create: "13-02-20 10:30"),
-    BloodPressure(id: 2, sys: 131, dia: 80, pul: 23, create: "14-02-20 12:20"),
-    BloodPressure(id: 3, sys: 132, dia: 80, pul: 23, create: "15-02-20 13:20")
-]
+//private var records: ArraySlice<BloodPressureModel> = [
+//    BloodPressureModel(sys: 129, dia: 80, pul: 23, create: Date()),
+//    BloodPressureModel(sys: 130, dia: 80, pul: 23, create: Date()),
+//    BloodPressureModel(sys: 131, dia: 80, pul: 23, create: Date()),
+//    BloodPressureModel(sys: 132, dia: 80, pul: 23, create: Date())
+//]
+
+private var records: ArraySlice<BloodPressureModel> = []
+private var _records: [BloodPressure] = []
 
 struct ListRecord: View {
     
+    let recordManager: RecordManager
     var show: Show
     
+    private func getRecord() {
+        _records = recordManager.getAllBloodPressure()
+        var i: Int = 0
+        for record in _records{
+            records.append(BloodPressureModel(id: i, sys: record.sys, dia: record.dia, pul: record.pul, create: record.create ?? Date()))
+            i += 1
+        }
+    }
+    
     init(show: Show) {
+        self.recordManager = RecordManager()
         self.show = show
         UITableView.appearance().isScrollEnabled = show == .PREVIEW ? false : true
-        
         UITableView.appearance().separatorStyle = .none
+        getRecord()
     }
     
     var body: some View {
         
-            List(show == .COMPLETE ? records : (records.count < 4 ? records.prefix(records.count) : records.prefix(3)), id: \.id){
+        List(show == .COMPLETE ? records : (records.count < 4 ? records.prefix(records.count) : records.prefix(3)), id: \.id){
                     record in
                     NavigationLink(
                         destination: ViewDetailRecord(record: record)){ RowRecord(record: record).frame(height:30)
@@ -44,8 +58,8 @@ struct ListRecord: View {
     }
 }
 
-struct ListRecord_Previews: PreviewProvider {
-    static var previews: some View {
-        ListRecord(show: .COMPLETE)
-    }
-}
+//struct ListRecord_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ListRecord(show: .COMPLETE)
+//    }
+//}

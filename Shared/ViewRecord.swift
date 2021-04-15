@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ViewRecord: View {
+    
     var body: some View {
         NavigationView{
             VStack {

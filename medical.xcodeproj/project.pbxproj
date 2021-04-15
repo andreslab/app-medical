@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		412504262628A4100092DB82 /* RecordModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 412504242628A4100092DB82 /* RecordModel.xcdatamodeld */; };
+		412504302628A4EC0092DB82 /* RecordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4125042F2628A4EC0092DB82 /* RecordManager.swift */; };
 		41688B1E262631E0006F18EB /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41688B1D262631E0006F18EB /* Color.swift */; };
 		417D0FCA2615BC9B003FBA45 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D0FC92615BC9B003FBA45 /* Tests_iOS.swift */; };
 		417D0FD52615BC9B003FBA45 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D0FD42615BC9B003FBA45 /* Tests_macOS.swift */; };
@@ -78,6 +80,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		412504252628A4100092DB82 /* RecordModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RecordModel.xcdatamodel; sourceTree = "<group>"; };
+		4125042F2628A4EC0092DB82 /* RecordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordManager.swift; sourceTree = "<group>"; };
 		41688B1D262631E0006F18EB /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		417D0FAE2615BC99003FBA45 /* medicalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medicalApp.swift; sourceTree = "<group>"; };
 		417D0FAF2615BC99003FBA45 /* ViewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewContent.swift; sourceTree = "<group>"; };
@@ -148,6 +152,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4125041B2628A3170092DB82 /* CoreDataManagers */ = {
+			isa = PBXGroup;
+			children = (
+				4125042F2628A4EC0092DB82 /* RecordManager.swift */,
+			);
+			path = CoreDataManagers;
+			sourceTree = "<group>";
+		};
+		4125041C2628A3280092DB82 /* CoreDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				412504242628A4100092DB82 /* RecordModel.xcdatamodeld */,
+			);
+			path = CoreDataModels;
+			sourceTree = "<group>";
+		};
 		41688B1B262631C8006F18EB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +198,8 @@
 		417D0FAD2615BC99003FBA45 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				4125041C2628A3280092DB82 /* CoreDataModels */,
+				4125041B2628A3170092DB82 /* CoreDataManagers */,
 				41688B1C262631D1006F18EB /* Extensions */,
 				41688B1B262631C8006F18EB /* Utils */,
 				417D102E2615CE43003FBA45 /* Data */,
@@ -441,7 +463,9 @@
 				4189A3F1261B99BC00729AF4 /* Tip.swift in Sources */,
 				417D100C2615C9A0003FBA45 /* ViewNewRecord.swift in Sources */,
 				417D0FF02615C92B003FBA45 /* ViewMain.swift in Sources */,
+				412504302628A4EC0092DB82 /* RecordManager.swift in Sources */,
 				417D10132615C9AE003FBA45 /* ViewDetailRecord.swift in Sources */,
+				412504262628A4100092DB82 /* RecordModel.xcdatamodeld in Sources */,
 				417D0FD72615BC9B003FBA45 /* medicalApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -850,6 +874,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		412504242628A4100092DB82 /* RecordModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				412504252628A4100092DB82 /* RecordModel.xcdatamodel */,
+			);
+			currentVersion = 412504252628A4100092DB82 /* RecordModel.xcdatamodel */;
+			path = RecordModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 417D0FA92615BC99003FBA45 /* Project object */;
 }
