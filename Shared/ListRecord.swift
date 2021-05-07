@@ -29,10 +29,8 @@ struct ListRecord: View {
     
     private func getRecord() {
         _records = recordManager.getAllBloodPressure()
-        var i: Int = 0
         for record in _records{
-            records.append(BloodPressureModel(id: i, sys: record.sys, dia: record.dia, pul: record.pul, create: record.create ?? Date()))
-            i += 1
+            records.append(BloodPressureModel(sys: record.sys, dia: record.dia, pul: record.pul, create: record.create ?? Date()))
         }
     }
     

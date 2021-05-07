@@ -16,6 +16,6 @@ struct ViewDetailRecord: View {
 
 struct ViewDetailRecord_Previews: PreviewProvider {
     static var previews: some View {
-        ViewDetailRecord(record:BloodPressureModel(id: 0, sys: 129, dia: 80, pul: 23, create: Date()))
+        ViewDetailRecord(record:BloodPressureModel(sys: 129, dia: 80, pul: 23, create: Date()))
     }
 }

@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct BloodPressureModel {
-    var id: Int
+struct BloodPressureModel: Identifiable {
+    var id: String = UUID().uuidString
     var sys: Int16
     var dia: Int16
     var pul: Int16

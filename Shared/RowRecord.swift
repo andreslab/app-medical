@@ -40,6 +40,6 @@ struct RowRecord: View {
 
 struct RowRecord_Previews: PreviewProvider {
     static var previews: some View {
-        RowRecord(record: BloodPressureModel(id: 0, sys: 120, dia: 80, pul: 70, create: Date())).previewLayout(.fixed(width: 400, height: 80))
+        RowRecord(record: BloodPressureModel(sys: 120, dia: 80, pul: 70, create: Date())).previewLayout(.fixed(width: 400, height: 80))
     }
 }
