@@ -7,23 +7,23 @@
 
 import SwiftUI
 
-struct ViewRecord: View {
+struct ViewRecords: View {
     
     var body: some View {
         NavigationView{
-            VStack {
-                //ComponentHeader(title: "Registro").padding()
+            VStack(alignment: .leading) {
                 HStack{
-                    ActionButton(title: "Enviar", action: {
+                    ActionButton(title: "Enviar",iconName:"paperplane.fill", action: {
                         print("")
                     })
-                    ActionButton(title: "Descargar", action: {
+                    ActionButton(title: "Descargar",iconName:"arrow.down", action: {
                         print("")
                     })
                     MoreActionButton(action: {
                         print("")
                     })
-                }
+                }.padding()
+                Divider()
                 ListRecord(show: .COMPLETE)
             }.navigationTitle("Registros").navigationViewStyle(StackNavigationViewStyle()).navigationBarTitleDisplayMode(.large).navigationBarItems(
                 trailing:
@@ -36,13 +36,16 @@ struct ViewRecord: View {
 struct ActionButton: View{
     
     let title: String
+    let iconName: String
     let action: () -> Void
     
     var body: some View {
         Button(action: action){
-            Image(systemName:"pencil")
-            Text(title).font(.caption2)
+            Image(systemName:iconName)
+            Text(title).font(.caption)
         }
+        .frame(height:30)
+        .frame(maxWidth: .infinity)
         .foregroundColor(.MColorGraySubTitle)
         .padding()
         .background(Color.MColorGrayBackground)
@@ -56,8 +59,9 @@ struct MoreActionButton: View{
     
     var body: some View {
         Button(action: action){
-            Image(systemName:"pencil")
+            Image(systemName:"ellipsis")
         }
+        .frame(width: 30,height:30)
         .foregroundColor(.MColorGraySubTitle)
         .padding()
         .background(Color.MColorGrayBackground)
@@ -65,8 +69,8 @@ struct MoreActionButton: View{
     }
 }
 
-struct ViewRecord_Previews: PreviewProvider {
+struct ViewRecords_Previews: PreviewProvider {
     static var previews: some View {
-        ViewRecord()
+        ViewRecords()
     }
 }

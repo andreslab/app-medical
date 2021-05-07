@@ -22,7 +22,7 @@ struct ViewContent: View {
                 Image(systemName: "heart.fill")
                     .imageScale(.medium).foregroundColor(.MColorGreenAdd)
             }
-            ViewRecord().tabItem {
+            ViewRecords().tabItem {
                 Image(systemName: "heart.fill")
                             .imageScale(.medium)
             }

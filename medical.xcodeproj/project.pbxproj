@@ -20,8 +20,8 @@
 		417D0FDC2615BC9B003FBA45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 417D0FB02615BC9A003FBA45 /* Assets.xcassets */; };
 		417D0FF02615C92B003FBA45 /* ViewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D0FEF2615C92B003FBA45 /* ViewMain.swift */; };
 		417D0FF12615C92B003FBA45 /* ViewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D0FEF2615C92B003FBA45 /* ViewMain.swift */; };
-		417D0FF72615C945003FBA45 /* ViewRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D0FF62615C945003FBA45 /* ViewRecord.swift */; };
-		417D0FF82615C945003FBA45 /* ViewRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D0FF62615C945003FBA45 /* ViewRecord.swift */; };
+		417D0FF72615C945003FBA45 /* ViewRecords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D0FF62615C945003FBA45 /* ViewRecords.swift */; };
+		417D0FF82615C945003FBA45 /* ViewRecords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D0FF62615C945003FBA45 /* ViewRecords.swift */; };
 		417D0FFE2615C954003FBA45 /* ViewTips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D0FFD2615C954003FBA45 /* ViewTips.swift */; };
 		417D0FFF2615C954003FBA45 /* ViewTips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D0FFD2615C954003FBA45 /* ViewTips.swift */; };
 		417D10052615C97C003FBA45 /* ViewAlarms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D10042615C97C003FBA45 /* ViewAlarms.swift */; };
@@ -98,7 +98,7 @@
 		417D0FD42615BC9B003FBA45 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		417D0FD62615BC9B003FBA45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		417D0FEF2615C92B003FBA45 /* ViewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMain.swift; sourceTree = "<group>"; };
-		417D0FF62615C945003FBA45 /* ViewRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRecord.swift; sourceTree = "<group>"; };
+		417D0FF62615C945003FBA45 /* ViewRecords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRecords.swift; sourceTree = "<group>"; };
 		417D0FFD2615C954003FBA45 /* ViewTips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTips.swift; sourceTree = "<group>"; };
 		417D10042615C97C003FBA45 /* ViewAlarms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAlarms.swift; sourceTree = "<group>"; };
 		417D100B2615C9A0003FBA45 /* ViewNewRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewRecord.swift; sourceTree = "<group>"; };
@@ -207,7 +207,7 @@
 				417D0FAF2615BC99003FBA45 /* ViewContent.swift */,
 				417D0FB02615BC9A003FBA45 /* Assets.xcassets */,
 				417D0FEF2615C92B003FBA45 /* ViewMain.swift */,
-				417D0FF62615C945003FBA45 /* ViewRecord.swift */,
+				417D0FF62615C945003FBA45 /* ViewRecords.swift */,
 				417D0FFD2615C954003FBA45 /* ViewTips.swift */,
 				417D10042615C97C003FBA45 /* ViewAlarms.swift */,
 				417D100B2615C9A0003FBA45 /* ViewNewRecord.swift */,
@@ -458,7 +458,7 @@
 				4189A3E3261B999500729AF4 /* RowTip.swift in Sources */,
 				4189D41A2624B9DB0033B5EA /* Alarm.swift in Sources */,
 				4189D43B2624C28B0033B5EA /* ComponentHeader.swift in Sources */,
-				417D0FF72615C945003FBA45 /* ViewRecord.swift in Sources */,
+				417D0FF72615C945003FBA45 /* ViewRecords.swift in Sources */,
 				4189D4252624BAC90033B5EA /* RowAlarm.swift in Sources */,
 				4189A3F1261B99BC00729AF4 /* Tip.swift in Sources */,
 				417D100C2615C9A0003FBA45 /* ViewNewRecord.swift in Sources */,
@@ -490,7 +490,7 @@
 				4189D41B2624B9DB0033B5EA /* Alarm.swift in Sources */,
 				418228B6262763BB009BEDBF /* ComponentGraph.swift in Sources */,
 				4189D43C2624C28B0033B5EA /* ComponentHeader.swift in Sources */,
-				417D0FF82615C945003FBA45 /* ViewRecord.swift in Sources */,
+				417D0FF82615C945003FBA45 /* ViewRecords.swift in Sources */,
 				4189D4262624BAC90033B5EA /* RowAlarm.swift in Sources */,
 				4189A3F2261B99BC00729AF4 /* Tip.swift in Sources */,
 				417D100D2615C9A0003FBA45 /* ViewNewRecord.swift in Sources */,

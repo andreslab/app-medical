@@ -10,19 +10,20 @@ import SwiftUI
 struct ViewAlarms: View {
     var body: some View {
         NavigationView{
-            VStack {
+            VStack(alignment: .leading) {
                 
                 HStack{
-                    ActionButton(title: "Nuevo", action: {
+                    ActionButton(title: "Nuevo", iconName:"plus", action: {
                         print("")
                     })
-                    ActionButton(title: "Calendario", action: {
+                    ActionButton(title: "Calendario", iconName:"calendar.badge.plus", action: {
                         print("")
                     })
                     MoreActionButton(action: {
                         print("")
                     })
                 }.padding()
+                Divider()
                 ListAlarms().navigationTitle("Alarmas").navigationBarTitleDisplayMode(.large).navigationBarItems(
                     trailing:
                         NavigationLink(
