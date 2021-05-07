@@ -39,6 +39,9 @@ struct ListRecord: View {
         self.show = show
         UITableView.appearance().isScrollEnabled = show == .PREVIEW ? false : true
         UITableView.appearance().separatorStyle = .none
+        UITableView.appearance().backgroundColor = .white
+        UITableViewCell.appearance().backgroundColor = .white
+        UITableView.appearance().tableFooterView = UIView()
         getRecord()
     }
     
@@ -51,8 +54,7 @@ struct ListRecord: View {
                     }.padding()
                     .background(Color.MColorGreenScan)
                     .cornerRadius(25)
-            }
-        
+        }
     }
 }
 
