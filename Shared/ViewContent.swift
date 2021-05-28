@@ -11,26 +11,26 @@ struct ViewContent: View {
     var body: some View {
         TabView{
             ViewMain(recordManager: RecordManager()).tabItem {
-                Image(systemName: "heart.fill")
+                Image(systemName: "chart.bar")
                             .imageScale(.medium)
             }
             ViewTips().tabItem {
-                Image(systemName: "heart.fill")
+                Image(systemName: "doc.text.below.ecg")
                             .imageScale(.medium)
             }
             ViewNewRecord(recordManager: RecordManager()).tabItem {
-                Image(systemName: "heart.fill")
-                    .imageScale(.medium).foregroundColor(.MColorGreenAdd)
+                Image(systemName: "plus.circle")
+                    .imageScale(.large)
             }
             ViewRecords().tabItem {
-                Image(systemName: "heart.fill")
+                Image(systemName: "newspaper")
                             .imageScale(.medium)
             }
             ViewAlarms().tabItem {
-                Image(systemName: "heart.fill")
+                Image(systemName: "alarm")
                             .imageScale(.medium)
             }
-        }
+        }.accentColor(.MColorPrimary)
         
     }
 }
