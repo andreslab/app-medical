@@ -33,18 +33,18 @@
 		417D10142615C9AE003FBA45 /* ViewDetailRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D10122615C9AE003FBA45 /* ViewDetailRecord.swift */; };
 		417D101A2615C9C4003FBA45 /* ViewProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D10192615C9C4003FBA45 /* ViewProfile.swift */; };
 		417D101B2615C9C4003FBA45 /* ViewProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D10192615C9C4003FBA45 /* ViewProfile.swift */; };
-		417D10212615CA8E003FBA45 /* ComponentCategoryRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D10202615CA8E003FBA45 /* ComponentCategoryRecord.swift */; };
-		417D10222615CA8E003FBA45 /* ComponentCategoryRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D10202615CA8E003FBA45 /* ComponentCategoryRecord.swift */; };
-		417D10282615CB36003FBA45 /* ComponentInputBloodPressure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D10272615CB36003FBA45 /* ComponentInputBloodPressure.swift */; };
-		417D10292615CB36003FBA45 /* ComponentInputBloodPressure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D10272615CB36003FBA45 /* ComponentInputBloodPressure.swift */; };
+		417D10212615CA8E003FBA45 /* CategoryRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D10202615CA8E003FBA45 /* CategoryRecord.swift */; };
+		417D10222615CA8E003FBA45 /* CategoryRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D10202615CA8E003FBA45 /* CategoryRecord.swift */; };
+		417D10282615CB36003FBA45 /* InputBloodPressure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D10272615CB36003FBA45 /* InputBloodPressure.swift */; };
+		417D10292615CB36003FBA45 /* InputBloodPressure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D10272615CB36003FBA45 /* InputBloodPressure.swift */; };
 		417D10302615CE67003FBA45 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D102F2615CE67003FBA45 /* Record.swift */; };
 		417D10312615CE67003FBA45 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D102F2615CE67003FBA45 /* Record.swift */; };
 		417D10372615CF25003FBA45 /* RowRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D10362615CF25003FBA45 /* RowRecord.swift */; };
 		417D10382615CF25003FBA45 /* RowRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D10362615CF25003FBA45 /* RowRecord.swift */; };
 		417D103E2615D293003FBA45 /* ListRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D103D2615D293003FBA45 /* ListRecord.swift */; };
 		417D103F2615D293003FBA45 /* ListRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D103D2615D293003FBA45 /* ListRecord.swift */; };
-		418228B5262763BB009BEDBF /* ComponentGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418228B4262763BB009BEDBF /* ComponentGraph.swift */; };
-		418228B6262763BB009BEDBF /* ComponentGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418228B4262763BB009BEDBF /* ComponentGraph.swift */; };
+		418228B5262763BB009BEDBF /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418228B4262763BB009BEDBF /* Graph.swift */; };
+		418228B6262763BB009BEDBF /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418228B4262763BB009BEDBF /* Graph.swift */; };
 		4189A3E3261B999500729AF4 /* RowTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189A3E2261B999500729AF4 /* RowTip.swift */; };
 		4189A3E4261B999500729AF4 /* RowTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189A3E2261B999500729AF4 /* RowTip.swift */; };
 		4189A3EA261B999F00729AF4 /* ListTips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189A3E9261B999F00729AF4 /* ListTips.swift */; };
@@ -59,8 +59,10 @@
 		4189D4262624BAC90033B5EA /* RowAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189D4242624BAC90033B5EA /* RowAlarm.swift */; };
 		4189D4302624C0280033B5EA /* ViewDetailAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189D42F2624C0280033B5EA /* ViewDetailAlarm.swift */; };
 		4189D4312624C0280033B5EA /* ViewDetailAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189D42F2624C0280033B5EA /* ViewDetailAlarm.swift */; };
-		4189D43B2624C28B0033B5EA /* ComponentHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189D43A2624C28B0033B5EA /* ComponentHeader.swift */; };
-		4189D43C2624C28B0033B5EA /* ComponentHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189D43A2624C28B0033B5EA /* ComponentHeader.swift */; };
+		41E63D932689DCF800DC2683 /* InputAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E63D922689DCF800DC2683 /* InputAlarm.swift */; };
+		41E63D942689DCF800DC2683 /* InputAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E63D922689DCF800DC2683 /* InputAlarm.swift */; };
+		41E63D972689E8E200DC2683 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E63D962689E8E200DC2683 /* Utils.swift */; };
+		41E63D982689E8E200DC2683 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E63D962689E8E200DC2683 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,12 +107,12 @@
 		417D100B2615C9A0003FBA45 /* ViewNewRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNewRecord.swift; sourceTree = "<group>"; };
 		417D10122615C9AE003FBA45 /* ViewDetailRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDetailRecord.swift; sourceTree = "<group>"; };
 		417D10192615C9C4003FBA45 /* ViewProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProfile.swift; sourceTree = "<group>"; };
-		417D10202615CA8E003FBA45 /* ComponentCategoryRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentCategoryRecord.swift; sourceTree = "<group>"; };
-		417D10272615CB36003FBA45 /* ComponentInputBloodPressure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentInputBloodPressure.swift; sourceTree = "<group>"; };
+		417D10202615CA8E003FBA45 /* CategoryRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRecord.swift; sourceTree = "<group>"; };
+		417D10272615CB36003FBA45 /* InputBloodPressure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputBloodPressure.swift; sourceTree = "<group>"; };
 		417D102F2615CE67003FBA45 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		417D10362615CF25003FBA45 /* RowRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowRecord.swift; sourceTree = "<group>"; };
 		417D103D2615D293003FBA45 /* ListRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRecord.swift; sourceTree = "<group>"; };
-		418228B4262763BB009BEDBF /* ComponentGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentGraph.swift; sourceTree = "<group>"; };
+		418228B4262763BB009BEDBF /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		4189A3E2261B999500729AF4 /* RowTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowTip.swift; sourceTree = "<group>"; };
 		4189A3E9261B999F00729AF4 /* ListTips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTips.swift; sourceTree = "<group>"; };
 		4189A3F0261B99BC00729AF4 /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
@@ -118,7 +120,8 @@
 		4189D4192624B9DB0033B5EA /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
 		4189D4242624BAC90033B5EA /* RowAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowAlarm.swift; sourceTree = "<group>"; };
 		4189D42F2624C0280033B5EA /* ViewDetailAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDetailAlarm.swift; sourceTree = "<group>"; };
-		4189D43A2624C28B0033B5EA /* ComponentHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentHeader.swift; sourceTree = "<group>"; };
+		41E63D922689DCF800DC2683 /* InputAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputAlarm.swift; sourceTree = "<group>"; };
+		41E63D962689E8E200DC2683 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +176,7 @@
 		41688B1B262631C8006F18EB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				41E63D962689E8E200DC2683 /* Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -200,6 +204,7 @@
 		417D0FAD2615BC99003FBA45 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				41E63D952689E56100DC2683 /* Components */,
 				4125041C2628A3280092DB82 /* CoreDataModels */,
 				4125041B2628A3170092DB82 /* CoreDataManagers */,
 				41688B1C262631D1006F18EB /* Extensions */,
@@ -216,16 +221,6 @@
 				417D10192615C9C4003FBA45 /* ViewProfile.swift */,
 				417D10122615C9AE003FBA45 /* ViewDetailRecord.swift */,
 				4189D42F2624C0280033B5EA /* ViewDetailAlarm.swift */,
-				417D10202615CA8E003FBA45 /* ComponentCategoryRecord.swift */,
-				417D10272615CB36003FBA45 /* ComponentInputBloodPressure.swift */,
-				4189D43A2624C28B0033B5EA /* ComponentHeader.swift */,
-				418228B4262763BB009BEDBF /* ComponentGraph.swift */,
-				417D10362615CF25003FBA45 /* RowRecord.swift */,
-				4189A3E2261B999500729AF4 /* RowTip.swift */,
-				4189D4242624BAC90033B5EA /* RowAlarm.swift */,
-				417D103D2615D293003FBA45 /* ListRecord.swift */,
-				4189A3E9261B999F00729AF4 /* ListTips.swift */,
-				4189D40E2624B9B60033B5EA /* LIstAlarms.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -284,6 +279,23 @@
 				4189D4192624B9DB0033B5EA /* Alarm.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		41E63D952689E56100DC2683 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				417D10202615CA8E003FBA45 /* CategoryRecord.swift */,
+				417D10272615CB36003FBA45 /* InputBloodPressure.swift */,
+				41E63D922689DCF800DC2683 /* InputAlarm.swift */,
+				418228B4262763BB009BEDBF /* Graph.swift */,
+				417D10362615CF25003FBA45 /* RowRecord.swift */,
+				4189A3E2261B999500729AF4 /* RowTip.swift */,
+				4189D4242624BAC90033B5EA /* RowAlarm.swift */,
+				417D103D2615D293003FBA45 /* ListRecord.swift */,
+				4189A3E9261B999F00729AF4 /* ListTips.swift */,
+				4189D40E2624B9B60033B5EA /* LIstAlarms.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -451,21 +463,22 @@
 			files = (
 				41688B1E262631E0006F18EB /* Color.swift in Sources */,
 				4189D4302624C0280033B5EA /* ViewDetailAlarm.swift in Sources */,
-				417D10212615CA8E003FBA45 /* ComponentCategoryRecord.swift in Sources */,
+				41E63D972689E8E200DC2683 /* Utils.swift in Sources */,
+				417D10212615CA8E003FBA45 /* CategoryRecord.swift in Sources */,
 				417D10372615CF25003FBA45 /* RowRecord.swift in Sources */,
-				418228B5262763BB009BEDBF /* ComponentGraph.swift in Sources */,
+				418228B5262763BB009BEDBF /* Graph.swift in Sources */,
 				417D10052615C97C003FBA45 /* ViewAlarms.swift in Sources */,
 				417D10302615CE67003FBA45 /* Record.swift in Sources */,
-				417D10282615CB36003FBA45 /* ComponentInputBloodPressure.swift in Sources */,
+				417D10282615CB36003FBA45 /* InputBloodPressure.swift in Sources */,
 				4189D40F2624B9B60033B5EA /* LIstAlarms.swift in Sources */,
 				4189A3EA261B999F00729AF4 /* ListTips.swift in Sources */,
+				41E63D932689DCF800DC2683 /* InputAlarm.swift in Sources */,
 				417D101A2615C9C4003FBA45 /* ViewProfile.swift in Sources */,
 				417D103E2615D293003FBA45 /* ListRecord.swift in Sources */,
 				417D0FFE2615C954003FBA45 /* ViewTips.swift in Sources */,
 				417D0FD92615BC9B003FBA45 /* ViewContent.swift in Sources */,
 				4189A3E3261B999500729AF4 /* RowTip.swift in Sources */,
 				4189D41A2624B9DB0033B5EA /* Alarm.swift in Sources */,
-				4189D43B2624C28B0033B5EA /* ComponentHeader.swift in Sources */,
 				417D0FF72615C945003FBA45 /* ViewRecords.swift in Sources */,
 				4189D4252624BAC90033B5EA /* RowAlarm.swift in Sources */,
 				4189A3F1261B99BC00729AF4 /* Tip.swift in Sources */,
@@ -483,11 +496,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4189D4312624C0280033B5EA /* ViewDetailAlarm.swift in Sources */,
-				417D10222615CA8E003FBA45 /* ComponentCategoryRecord.swift in Sources */,
+				417D10222615CA8E003FBA45 /* CategoryRecord.swift in Sources */,
 				417D10382615CF25003FBA45 /* RowRecord.swift in Sources */,
 				417D10062615C97C003FBA45 /* ViewAlarms.swift in Sources */,
+				41E63D942689DCF800DC2683 /* InputAlarm.swift in Sources */,
 				417D10312615CE67003FBA45 /* Record.swift in Sources */,
-				417D10292615CB36003FBA45 /* ComponentInputBloodPressure.swift in Sources */,
+				417D10292615CB36003FBA45 /* InputBloodPressure.swift in Sources */,
 				4189D4102624B9B60033B5EA /* LIstAlarms.swift in Sources */,
 				4189A3EB261B999F00729AF4 /* ListTips.swift in Sources */,
 				417D101B2615C9C4003FBA45 /* ViewProfile.swift in Sources */,
@@ -496,8 +510,7 @@
 				417D0FDA2615BC9B003FBA45 /* ViewContent.swift in Sources */,
 				4189A3E4261B999500729AF4 /* RowTip.swift in Sources */,
 				4189D41B2624B9DB0033B5EA /* Alarm.swift in Sources */,
-				418228B6262763BB009BEDBF /* ComponentGraph.swift in Sources */,
-				4189D43C2624C28B0033B5EA /* ComponentHeader.swift in Sources */,
+				418228B6262763BB009BEDBF /* Graph.swift in Sources */,
 				417D0FF82615C945003FBA45 /* ViewRecords.swift in Sources */,
 				4189D4262624BAC90033B5EA /* RowAlarm.swift in Sources */,
 				4189A3F2261B99BC00729AF4 /* Tip.swift in Sources */,
@@ -505,6 +518,7 @@
 				417D0FF12615C92B003FBA45 /* ViewMain.swift in Sources */,
 				417D10142615C9AE003FBA45 /* ViewDetailRecord.swift in Sources */,
 				417D0FD82615BC9B003FBA45 /* medicalApp.swift in Sources */,
+				41E63D982689E8E200DC2683 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

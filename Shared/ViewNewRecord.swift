@@ -23,9 +23,9 @@ struct ViewNewRecord: View {
                 }
                 Spacer()
             }
-            ComponentInputBloodPressure(sys:
+            InputBloodPressure(sys:
                                             $sys, dia: $dia, pul: $pul)
-            ComponentCategoryRecord()
+            CategoryRecord()
             Spacer()
             HStack(alignment: .center){
                 Button("Cancelar") {

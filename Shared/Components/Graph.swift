@@ -12,7 +12,7 @@ private var records: ArraySlice<BloodPressureModel> = []
 private var _records: [BloodPressure] = []
 private var someTuple: [(Int16, Int16)] = []
 
-struct ComponentGraph: View {
+struct Graph: View {
     
     let recordManager: RecordManager
     
@@ -41,8 +41,8 @@ struct ComponentGraph: View {
     }
 }
 
-struct ComponentGraph_Previews: PreviewProvider {
+struct Graph_Previews: PreviewProvider {
     static var previews: some View {
-        ComponentGraph()
+        Graph()
     }
 }

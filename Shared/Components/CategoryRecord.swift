@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ComponentCategoryRecord: View {
+struct CategoryRecord: View {
     var body: some View {
         HStack {
             Button("BP") {
@@ -25,9 +25,9 @@ struct ComponentCategoryRecord: View {
     }
 }
 
-struct ComponentCategoryRecord_Previews: PreviewProvider {
+struct CategoryRecord_Previews: PreviewProvider {
     static var previews: some View {
-        ComponentCategoryRecord()
+        CategoryRecord()
     }
 }
 

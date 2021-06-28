@@ -15,8 +15,7 @@ struct ViewMain: View {
         NavigationView{
         ScrollView {
             VStack{
-                //ComponentHeader(title: "Hola, Jaime").padding()
-                ComponentGraph()
+                Graph()
                 HStack{
                     Text("Ultimos registros")
                     Spacer()

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ComponentInputBloodPressure: View {
+struct InputBloodPressure: View {
     
     @Binding var sys: String
     @Binding var dia: String
@@ -54,8 +54,13 @@ struct ComponentInputBloodPressure: View {
     }
 }
 
-//struct ComponentInputBloodPressure_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ComponentInputBloodPressure()
-//    }
-//}
+struct InputBloodPressure_Previews: PreviewProvider {
+    
+    @State static var sys = ""
+    @State static var dia = ""
+    @State static var pul = ""
+    
+    static var previews: some View {
+        InputBloodPressure(sys: $sys, dia: $dia, pul: $pul)
+    }
+}
