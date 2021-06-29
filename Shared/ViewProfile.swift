@@ -9,7 +9,12 @@ import SwiftUI
 
 struct ViewProfile: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .center, spacing: /*@START_MENU_TOKEN@*/nil/*@END_MENU_TOKEN@*/, content: {
+            Image("logo")
+                .clipShape(Circle())
+                .shadow(radius: 5)
+                .overlay(Circle().stroke(Color.MColorPrimary, lineWidth: 5))
+        })
     }
 }
 

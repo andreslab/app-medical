@@ -10,7 +10,7 @@ import SwiftUI
 struct ViewDetailRecord: View {
     var record: BloodPressureModel
     var body: some View {
-        Text("sys \(record.sys)")
+        DetailBloodPressure(record: record).padding()
     }
 }
 

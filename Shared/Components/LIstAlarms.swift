@@ -18,7 +18,7 @@ struct ListAlarms: View {
         List(alarms, id: \.id){
             alarm in
             NavigationLink(
-                destination: ViewDetailAlarm(alarm: alarm)){ RowAlarm(alarm: alarm).frame(height:30)
+                destination: ViewCreateAndEditAlarm(alarm: alarm)){ RowAlarm(alarm: alarm).frame(height:30)
             }.padding()
             .background(Color.MColorGrayBackground)
             .cornerRadius(25)

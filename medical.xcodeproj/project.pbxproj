@@ -57,8 +57,10 @@
 		4189D41B2624B9DB0033B5EA /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189D4192624B9DB0033B5EA /* Alarm.swift */; };
 		4189D4252624BAC90033B5EA /* RowAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189D4242624BAC90033B5EA /* RowAlarm.swift */; };
 		4189D4262624BAC90033B5EA /* RowAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189D4242624BAC90033B5EA /* RowAlarm.swift */; };
-		4189D4302624C0280033B5EA /* ViewDetailAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189D42F2624C0280033B5EA /* ViewDetailAlarm.swift */; };
-		4189D4312624C0280033B5EA /* ViewDetailAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189D42F2624C0280033B5EA /* ViewDetailAlarm.swift */; };
+		4189D4302624C0280033B5EA /* ViewCreateAndEditAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189D42F2624C0280033B5EA /* ViewCreateAndEditAlarm.swift */; };
+		4189D4312624C0280033B5EA /* ViewCreateAndEditAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189D42F2624C0280033B5EA /* ViewCreateAndEditAlarm.swift */; };
+		41CE8141268B41710014897C /* DetailBloodPressure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CE8140268B41710014897C /* DetailBloodPressure.swift */; };
+		41CE8142268B41710014897C /* DetailBloodPressure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CE8140268B41710014897C /* DetailBloodPressure.swift */; };
 		41E63D932689DCF800DC2683 /* InputAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E63D922689DCF800DC2683 /* InputAlarm.swift */; };
 		41E63D942689DCF800DC2683 /* InputAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E63D922689DCF800DC2683 /* InputAlarm.swift */; };
 		41E63D972689E8E200DC2683 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E63D962689E8E200DC2683 /* Utils.swift */; };
@@ -119,7 +121,8 @@
 		4189D40E2624B9B60033B5EA /* LIstAlarms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LIstAlarms.swift; sourceTree = "<group>"; };
 		4189D4192624B9DB0033B5EA /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
 		4189D4242624BAC90033B5EA /* RowAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowAlarm.swift; sourceTree = "<group>"; };
-		4189D42F2624C0280033B5EA /* ViewDetailAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDetailAlarm.swift; sourceTree = "<group>"; };
+		4189D42F2624C0280033B5EA /* ViewCreateAndEditAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCreateAndEditAlarm.swift; sourceTree = "<group>"; };
+		41CE8140268B41710014897C /* DetailBloodPressure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBloodPressure.swift; sourceTree = "<group>"; };
 		41E63D922689DCF800DC2683 /* InputAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputAlarm.swift; sourceTree = "<group>"; };
 		41E63D962689E8E200DC2683 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -220,7 +223,7 @@
 				417D100B2615C9A0003FBA45 /* ViewNewRecord.swift */,
 				417D10192615C9C4003FBA45 /* ViewProfile.swift */,
 				417D10122615C9AE003FBA45 /* ViewDetailRecord.swift */,
-				4189D42F2624C0280033B5EA /* ViewDetailAlarm.swift */,
+				4189D42F2624C0280033B5EA /* ViewCreateAndEditAlarm.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				417D103D2615D293003FBA45 /* ListRecord.swift */,
 				4189A3E9261B999F00729AF4 /* ListTips.swift */,
 				4189D40E2624B9B60033B5EA /* LIstAlarms.swift */,
+				41CE8140268B41710014897C /* DetailBloodPressure.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -462,7 +466,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41688B1E262631E0006F18EB /* Color.swift in Sources */,
-				4189D4302624C0280033B5EA /* ViewDetailAlarm.swift in Sources */,
+				4189D4302624C0280033B5EA /* ViewCreateAndEditAlarm.swift in Sources */,
 				41E63D972689E8E200DC2683 /* Utils.swift in Sources */,
 				417D10212615CA8E003FBA45 /* CategoryRecord.swift in Sources */,
 				417D10372615CF25003FBA45 /* RowRecord.swift in Sources */,
@@ -477,6 +481,7 @@
 				417D103E2615D293003FBA45 /* ListRecord.swift in Sources */,
 				417D0FFE2615C954003FBA45 /* ViewTips.swift in Sources */,
 				417D0FD92615BC9B003FBA45 /* ViewContent.swift in Sources */,
+				41CE8141268B41710014897C /* DetailBloodPressure.swift in Sources */,
 				4189A3E3261B999500729AF4 /* RowTip.swift in Sources */,
 				4189D41A2624B9DB0033B5EA /* Alarm.swift in Sources */,
 				417D0FF72615C945003FBA45 /* ViewRecords.swift in Sources */,
@@ -495,7 +500,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4189D4312624C0280033B5EA /* ViewDetailAlarm.swift in Sources */,
+				4189D4312624C0280033B5EA /* ViewCreateAndEditAlarm.swift in Sources */,
 				417D10222615CA8E003FBA45 /* CategoryRecord.swift in Sources */,
 				417D10382615CF25003FBA45 /* RowRecord.swift in Sources */,
 				417D10062615C97C003FBA45 /* ViewAlarms.swift in Sources */,
@@ -513,6 +518,7 @@
 				418228B6262763BB009BEDBF /* Graph.swift in Sources */,
 				417D0FF82615C945003FBA45 /* ViewRecords.swift in Sources */,
 				4189D4262624BAC90033B5EA /* RowAlarm.swift in Sources */,
+				41CE8142268B41710014897C /* DetailBloodPressure.swift in Sources */,
 				4189A3F2261B99BC00729AF4 /* Tip.swift in Sources */,
 				417D100D2615C9A0003FBA45 /* ViewNewRecord.swift in Sources */,
 				417D0FF12615C92B003FBA45 /* ViewMain.swift in Sources */,

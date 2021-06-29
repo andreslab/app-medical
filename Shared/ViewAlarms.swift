@@ -13,9 +13,10 @@ struct ViewAlarms: View {
             VStack(alignment: .leading) {
                 
                 HStack{
-                    ActionButton(title: "Nuevo", iconName:"plus", action: {
-                        print("")
-                    })
+                    NavigationLink(
+                        destination:ViewCreateAndEditAlarm(alarm: nil)){
+                        ActionButton(title: "Nuevo", iconName:"plus", action: {})
+                    }
                     ActionButton(title: "Calendario", iconName:"calendar.badge.plus", action: {
                         print("")
                     })
