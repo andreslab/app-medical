@@ -33,42 +33,6 @@ struct ViewRecords: View {
     }
 }
 
-struct ActionButton: View{
-    
-    let title: String
-    let iconName: String
-    let action: () -> Void
-    
-    var body: some View {
-        Button(action: action){
-            Image(systemName:iconName)
-            Text(title).font(.caption)
-        }
-        .frame(height:30)
-        .frame(maxWidth: .infinity)
-        .foregroundColor(.MColorGraySubTitle)
-        .padding()
-        .background(Color.MColorGrayBackground)
-        .cornerRadius(20)
-    }
-}
-
-struct MoreActionButton: View{
-    
-    let action: () -> Void
-    
-    var body: some View {
-        Button(action: action){
-            Image(systemName:"ellipsis")
-        }
-        .frame(width: 30,height:30)
-        .foregroundColor(.MColorGraySubTitle)
-        .padding()
-        .background(Color.MColorGrayBackground)
-        .cornerRadius(20)
-    }
-}
-
 struct ViewRecords_Previews: PreviewProvider {
     static var previews: some View {
         ViewRecords()

@@ -46,3 +46,73 @@ struct CheckBox: View {
             }
     }
 }
+
+struct ActionButton: View{
+    
+    let title: String
+    let iconName: String
+    let action: () -> Void
+    
+    var body: some View {
+        Button(action: action){
+            Image(systemName:iconName)
+            Text(title).font(.caption)
+        }
+        .frame(height:30)
+        .frame(maxWidth: .infinity)
+        .foregroundColor(.MColorGraySubTitle)
+        .padding()
+        .background(Color.MColorGrayBackground)
+        .cornerRadius(20)
+    }
+}
+
+struct MoreActionButton: View{
+    
+    let action: () -> Void
+    
+    var body: some View {
+        Button(action: action){
+            Image(systemName:"ellipsis")
+        }
+        .frame(width: 30,height:30)
+        .foregroundColor(.MColorGraySubTitle)
+        .padding()
+        .background(Color.MColorGrayBackground)
+        .cornerRadius(20)
+    }
+}
+
+struct SaveButton: View{
+    
+    let title: String
+    let action: () -> Void
+    
+    var body: some View {
+        Button(action: action){
+            Text(title).font(.caption2)
+        }
+        .foregroundColor(.white)
+        .font(.title2)
+        .frame(width:120)
+        .padding()
+        .background(Color.MColorPrimary)
+        .cornerRadius(20)
+    }
+}
+
+struct ProfileButton: View{
+    
+    /*var body: some View {
+        Image(systemName:"person")
+        .foregroundColor(.white)
+            .frame(width:8, height:8)
+        .padding()
+        .background(Color.MColorPrimary)
+        .cornerRadius(4)
+    }*/
+    var body: some View {
+        Image(systemName:"person")
+        .foregroundColor(Color.MColorPrimary)
+    }
+}

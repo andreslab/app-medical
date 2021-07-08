@@ -15,13 +15,29 @@ private let alarms = [
 
 struct ListAlarms: View {
     var body: some View {
-        List(alarms, id: \.id){
-            alarm in
+        if alarms.count > 0 {
+            List(alarms, id: \.id){
+                alarm in
+                NavigationLink(
+                    destination: ViewCreateAndEditAlarm(alarm: alarm)){ RowAlarm(alarm: alarm).frame(height:30)
+                }.padding()
+                .background(Color.MColorGrayBackground)
+                .cornerRadius(25)
+            }
+        }else {
             NavigationLink(
-                destination: ViewCreateAndEditAlarm(alarm: alarm)){ RowAlarm(alarm: alarm).frame(height:30)
-            }.padding()
-            .background(Color.MColorGrayBackground)
-            .cornerRadius(25)
+                destination:ViewCreateAndEditAlarm(alarm: nil)){
+                VStack{
+                    Image(systemName: "plus.circle")
+                        .imageScale(.large)
+                        .foregroundColor(Color.MColorGraySubTitle)
+                    Text("No existen elementos")
+                    .frame(maxWidth: .infinity, alignment: .center)
+                    .padding()
+                    .foregroundColor(Color.MColorGraySubTitle)
+                        .font(.callout)
+                }
+            }
         }
     }
 }

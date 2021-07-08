@@ -37,7 +37,15 @@ struct Graph: View {
     }
     
     var body: some View {
-        BarChartView(data: data, title: "record", legend: "cardio", style: style, form: CGSize(width: 300, height: 200), dropShadow: false, cornerImage: nil, valueSpecifier: "hola", animatedToBack: true)
+        if (records.count > 0 ){
+            BarChartView(data: data, title: "record", legend: "cardio", style: style, form: CGSize(width: 300, height: 200), dropShadow: false, cornerImage: nil, valueSpecifier: "hola", animatedToBack: true)
+        }else {
+            Text("No existen elementos")
+            .frame(maxWidth: .infinity, alignment: .center)
+            .padding()
+            .foregroundColor(Color.MColorGraySubTitle)
+                .font(.callout)
+        }
     }
 }
 

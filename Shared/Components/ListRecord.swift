@@ -47,13 +47,29 @@ struct ListRecord: View {
     
     var body: some View {
         
-        List(show == .COMPLETE ? records : (records.count < 4 ? records.prefix(records.count) : records.prefix(3)), id: \.id){
-                    record in
-                    NavigationLink(
-                        destination: ViewDetailRecord(record: record)){ RowRecord(record: record).frame(height:30)
-                    }.padding()
-                    .background(Color.MColorGreenScan)
-                    .cornerRadius(25)
+        if records.count > 0 {
+            List(show == .COMPLETE ? records : (records.count < 4 ? records.prefix(records.count) : records.prefix(3)), id: \.id){
+                        record in
+                        NavigationLink(
+                            destination: ViewDetailRecord(record: record)){ RowRecord(record: record).frame(height:30)
+                        }.padding()
+                        .background(Color.MColorGreenScan)
+                        .cornerRadius(25)
+            }
+        }else {
+            NavigationLink(
+                destination:ViewNewRecord(recordManager: RecordManager())){
+                    VStack{
+                        Image(systemName: "plus.circle")
+                            .imageScale(.large)
+                            .foregroundColor(Color.MColorGraySubTitle)
+                        Text("No existen elementos")
+                        .frame(maxWidth: .infinity, alignment: .center)
+                        .padding()
+                        .foregroundColor(Color.MColorGraySubTitle)
+                            .font(.callout)
+                    }
+                }
         }
     }
 }

@@ -46,21 +46,3 @@ struct ViewNewRecord_Previews: PreviewProvider {
         ViewNewRecord(recordManager: RecordManager())
     }
 }
-
-struct SaveButton: View{
-    
-    let title: String
-    let action: () -> Void
-    
-    var body: some View {
-        Button(action: action){
-            Text(title).font(.caption2)
-        }
-        .foregroundColor(.white)
-        .font(.title2)
-        .frame(width:120)
-        .padding()
-        .background(Color.MColorPrimary)
-        .cornerRadius(20)
-    }
-}
