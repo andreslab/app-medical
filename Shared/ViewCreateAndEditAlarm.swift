@@ -13,7 +13,7 @@ struct ViewCreateAndEditAlarm: View {
     @State private var hour: String = ""
     @State private var repeatTime: String = ""
     
-    init(alarm: Alarm?) {
+    init(alarm: AlarmModel?) {
         title = alarm?.title ?? ""
         hour = alarm?.description ?? ""
         repeatTime = alarm?.description ?? ""
@@ -26,6 +26,6 @@ struct ViewCreateAndEditAlarm: View {
 
 struct ViewCreateAndEditAlarm_Previews: PreviewProvider {
     static var previews: some View {
-        ViewCreateAndEditAlarm(alarm: Alarm(id: 0, title: "titulo", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.", date: "12-30", create: ""))
+        ViewCreateAndEditAlarm(alarm: AlarmModel(id: 0, title: "titulo", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.", date: "12-30", create: ""))
     }
 }

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		412504262628A4100092DB82 /* RecordModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 412504242628A4100092DB82 /* RecordModel.xcdatamodeld */; };
 		412504302628A4EC0092DB82 /* RecordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4125042F2628A4EC0092DB82 /* RecordManager.swift */; };
+		4154D4A1269D410000E86BC5 /* AlarmModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4154D49F269D410000E86BC5 /* AlarmModel.xcdatamodeld */; };
+		4154D4A3269D419B00E86BC5 /* AlarmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4154D4A2269D419B00E86BC5 /* AlarmManager.swift */; };
 		41688B1E262631E0006F18EB /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41688B1D262631E0006F18EB /* Color.swift */; };
 		417378CA2685160800FDFADB /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 417378C92685160800FDFADB /* SwiftUICharts */; };
 		417D0FCA2615BC9B003FBA45 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417D0FC92615BC9B003FBA45 /* Tests_iOS.swift */; };
@@ -87,6 +89,8 @@
 /* Begin PBXFileReference section */
 		412504252628A4100092DB82 /* RecordModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RecordModel.xcdatamodel; sourceTree = "<group>"; };
 		4125042F2628A4EC0092DB82 /* RecordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordManager.swift; sourceTree = "<group>"; };
+		4154D4A0269D410000E86BC5 /* AlarmModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlarmModel.xcdatamodel; sourceTree = "<group>"; };
+		4154D4A2269D419B00E86BC5 /* AlarmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmManager.swift; sourceTree = "<group>"; };
 		41688B1D262631E0006F18EB /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		417D0FAE2615BC99003FBA45 /* medicalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medicalApp.swift; sourceTree = "<group>"; };
 		417D0FAF2615BC99003FBA45 /* ViewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewContent.swift; sourceTree = "<group>"; };
@@ -164,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				4125042F2628A4EC0092DB82 /* RecordManager.swift */,
+				4154D4A2269D419B00E86BC5 /* AlarmManager.swift */,
 			);
 			path = CoreDataManagers;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				412504242628A4100092DB82 /* RecordModel.xcdatamodeld */,
+				4154D49F269D410000E86BC5 /* AlarmModel.xcdatamodeld */,
 			);
 			path = CoreDataModels;
 			sourceTree = "<group>";
@@ -475,6 +481,7 @@
 				417D10302615CE67003FBA45 /* Record.swift in Sources */,
 				417D10282615CB36003FBA45 /* InputBloodPressure.swift in Sources */,
 				4189D40F2624B9B60033B5EA /* LIstAlarms.swift in Sources */,
+				4154D4A1269D410000E86BC5 /* AlarmModel.xcdatamodeld in Sources */,
 				4189A3EA261B999F00729AF4 /* ListTips.swift in Sources */,
 				41E63D932689DCF800DC2683 /* InputAlarm.swift in Sources */,
 				417D101A2615C9C4003FBA45 /* ViewProfile.swift in Sources */,
@@ -493,6 +500,7 @@
 				417D10132615C9AE003FBA45 /* ViewDetailRecord.swift in Sources */,
 				412504262628A4100092DB82 /* RecordModel.xcdatamodeld in Sources */,
 				417D0FD72615BC9B003FBA45 /* medicalApp.swift in Sources */,
+				4154D4A3269D419B00E86BC5 /* AlarmManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -930,6 +938,16 @@
 			);
 			currentVersion = 412504252628A4100092DB82 /* RecordModel.xcdatamodel */;
 			path = RecordModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		4154D49F269D410000E86BC5 /* AlarmModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4154D4A0269D410000E86BC5 /* AlarmModel.xcdatamodel */,
+			);
+			currentVersion = 4154D4A0269D410000E86BC5 /* AlarmModel.xcdatamodel */;
+			path = AlarmModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

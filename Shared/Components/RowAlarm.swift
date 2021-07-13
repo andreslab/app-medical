@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RowAlarm: View {
-    var alarm: Alarm
+    var alarm: AlarmModel
     
     var body: some View {
         VStack{
@@ -26,6 +26,6 @@ struct RowAlarm: View {
 
 struct RowAlarm_Previews: PreviewProvider {
     static var previews: some View {
-        RowAlarm(alarm: Alarm(id: 0, title: "titulo", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.", date: "12-30", create: "")).previewLayout(.fixed(width: 400, height: 150))
+        RowAlarm(alarm: AlarmModel(id: 0, title: "titulo", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.", date: "12-30", create: "")).previewLayout(.fixed(width: 400, height: 150))
     }
 }
